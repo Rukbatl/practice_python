@@ -1,0 +1,34 @@
+'''
+Definir una función max() que tome como argumento dos números y devuelva el mayor de ellos. 
+(Es cierto que python tiene una función max() incorporada, 
+pero hacerla nosotros mismos es un muy buen ejercicio.
+'''
+
+
+def custom_max(n1, n2):
+    if n1 > n2:
+        print(f'{n1} es el mayor')
+        return n1
+    elif n2 > n1:
+        print(f'{n2} es el mayor')
+        return n2
+    elif n1 == n2:
+        print(f'Ambos números son iguales')
+    else:
+        print(f'DEBUG: algo salió mal.')
+
+a = input(f'Ingrese n1: ')
+b = input(f'Ingrese n2: ')
+
+custom_max(a, b)
+
+'''
+entrada: n1, n2
+salida: el mayor de ambos
+
+comparar n1 con n2
+devolver n2 si este es mayor
+sino, ver si n1 es mayor que n2
+devolver n1
+si los 2 son iguales, mostrar en pantalla que lo son.
+'''
